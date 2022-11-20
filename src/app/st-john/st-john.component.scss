@@ -1,0 +1,233 @@
+$color_1: #f9f5ef;
+$color_2: #fff;
+$color_3: #00455a;
+$color_4: #fff8f8;
+$font-family_1: Playfair Display;
+$font-family_2: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+$font-family_3: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+$background-color_1: #00455a;
+$background-color_2: #fff;
+$background-color_3: #f9f5ef;
+
+.about-content {
+  background: url(../../assets/img/wave.png);
+  max-width: 97%;
+  height: 390px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  background-color: $background-color_2;
+  text-align: center;
+  h1 {
+    width: 768px;
+    height: 58px;
+    margin: 0px auto;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+
+    text-align: center;
+
+    /* teal */
+
+    color: #00455a;
+  }
+  p {
+    font-family: $font-family_2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 150%;
+    width: 57%;
+    margin: 0px auto;
+    color: #00455a;
+  }
+}
+.btn {
+  position: relative;
+  width: 250px;
+  height: 48px;
+  color: $color_2;
+  font-family: $font-family_2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  font-feature-settings: "ss06" on, "ss04" on, "liga" off;
+  background: #c1995b;
+  border-radius: 8px;
+  margin: 0 1rem;
+  position: relative;
+
+  box-shadow: 2px 3px 3px #27262627;
+  &:hover {
+    background-color: $background-color_1;
+    transition: 0.3s;
+    background-color: $background-color_1;
+    transition: 0.3s;
+  }
+}
+.cta {
+  background: #c1995b;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 2rem;
+
+  font-family: $font-family_1;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 112px;
+  margin: 0 !important;
+  @media (max-width:576px) {
+    width: 100% !important;
+    padding: 0px 10px !important;
+  }
+ 
+  .btn {
+    position: relative;
+    width: 250px;
+    height: 48px;
+    color: $color_2;
+    font-family: $font-family_2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    font-feature-settings: "ss06" on, "ss04" on, "liga" off;
+    background: #00455a;
+    border-radius: 8px;
+    margin: 0 1rem;
+    padding-left:25px;
+    position: relative;
+
+    box-shadow: 2px 3px 3px #27262627;
+    &:hover {
+      background-color: $background-color_1;
+      transition: 0.3s;
+      background-color: $background-color_1;
+      transition: 0.3s;
+    }
+  }
+  h1 {
+    width: 591px;
+    height: 116px;
+
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    padding-left:25px;
+    /* or 58px */
+
+    /* red white */
+
+    color: #fff8f8;
+  }
+  .img3 {
+    width: 100%;
+    height: 400px;
+ 
+  
+  }
+  p {
+    width: 591px;
+    height: 54px;
+
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    padding-left:25px;
+    /* or 27px */
+
+    /* red white */
+
+    color: #fff8f8;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-content {
+    max-width: 100%;
+    h1 {
+      width: 338px;
+      height: 96px;
+
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 120%;
+      margin: 0px auto;
+      text-align: center;
+      color: #00455a;
+     
+    }
+    p {
+      width: 338px !important;
+      height: 80px;
+      font-family: Plus Jakarta Sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px !important;
+      line-height: 150%;
+      text-align: center;
+      color: #000000;
+      
+    }
+    .btn {
+      width: 100% !important;
+      max-width: 299px;
+      
+    }
+  }
+  .cta {
+    h1 {
+      width: 338px;
+      height: 58px;
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+
+      color: #f9f5ef;
+      @media (max-width:576px) {
+        width: 338px !important;
+    padding: 0px 31px;
+      }
+    }
+    p {
+      width: 338px;
+      height: 63px;
+
+      font-family: Plus Jakarta Sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #f9f5ef;
+      @media (max-width:576px) {
+        width: 338px !important;
+        padding: 0px 31px;
+      }
+    }
+ 
+
+   
+  }
+}

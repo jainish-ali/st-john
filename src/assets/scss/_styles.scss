@@ -1,0 +1,559 @@
+@import './variables';
+
+/* You can add global styles to this file, and also import other style files */
+// Start common css
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body,
+ol,
+ul,
+li,
+div,
+p,
+span,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+thead,
+th,
+tbody,
+tr,
+td,
+img,
+input,
+textarea,
+dd,
+dt,
+dl {
+    word-wrap: break-word;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+textarea {
+    overflow: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dd,
+dt,
+dl {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+a img,
+img {
+    border: none;
+    outline: none;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+a,
+button {
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    color: inherit;
+    transition: 0.3s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+input {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-font-smoothing: antialiased;
+    background-color: #fff;
+    // overflow-x: hidden;
+}
+
+ul,
+menu,
+dir {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-center {
+    align-items: center !important;
+}
+
+.align-start {
+    align-items: flex-start !important;
+}
+
+.align-end {
+    align-items: flex-end !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.justify-between {
+    justify-content: space-between !important;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+.mx-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+// End common css
+
+// fonts
+@font-face {
+    font-family: 'PlayfairDisplay-SemiBoldItalic';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.svg#PlayfairDisplay-SemiBoldItalic') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-SemiBold';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBold.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBold.svg#PlayfairDisplay-SemiBold') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBold.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-MediumItalic';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.svg#PlayfairDisplay-MediumItalic') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-ExtraBoldItalic';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.svg#PlayfairDisplay-ExtraBoldItalic') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Medium';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Medium.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Medium.svg#PlayfairDisplay-Medium') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Medium.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Medium.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-ExtraBold';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.svg#PlayfairDisplay-ExtraBold') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-BlackItalic';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Black';
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Black.eot');
+    src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Black.svg#PlayfairDisplay-Black') format('svg'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Black.ttf') format('truetype'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Black.woff') format('woff'),
+        url('/assets/fonts/Playfair_Display/PlayfairDisplay-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PlusJakartaSans-Bold';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.svg#PlusJakartaSans-Bold') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-BoldItalic';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-BoldItalic.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-BoldItalic.svg#PlusJakartaSans-BoldItalic') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-BoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-BoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-ExtraBold';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.svg#PlusJakartaSans-ExtraBold') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-ExtraBoldItalic';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBoldItalic.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBoldItalic.svg#PlusJakartaSans-ExtraBoldItalic') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBoldItalic.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-ExtraLight';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.svg#PlusJakartaSans-ExtraLight') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-ExtraLight';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.svg#PlusJakartaSans-ExtraLight') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-ExtraLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Light';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.svg#PlusJakartaSans-Light') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Italic';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.svg#PlusJakartaSans-Italic') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-LightItalic';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-LightItalic.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-LightItalic.svg#PlusJakartaSans-LightItalic') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-LightItalic.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-LightItalic.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-LightItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Medium';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.svg#PlusJakartaSans-Medium') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-MediumItalic';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-MediumItalic.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-MediumItalic.svg#PlusJakartaSans-MediumItalic') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-MediumItalic.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-MediumItalic.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-MediumItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Regular';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.svg#PlusJakartaSans-Regular') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-SemiBold';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.svg#PlusJakartaSans-SemiBold') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-SemiBoldItalic';
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.eot');
+    src: url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.svg#PlusJakartaSans-SemiBoldItalic') format('svg'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.woff') format('woff'),
+        url('/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

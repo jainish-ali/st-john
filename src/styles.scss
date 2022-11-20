@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+overflow-x: hidden;
+font-family: SF-Medium;
+}
+@font-face {
+    font-family: SF-Medium;
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF-medium'), url('./assets/fonts/SF-Pro-Text-Medium.otf');
+  }
+  @font-face {
+    font-family: SF-Bold;
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF-Bold'), url('./assets/fonts/SF-Pro-Text-Bold.otf');
+  }

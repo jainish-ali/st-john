@@ -1,0 +1,154 @@
+ // start faqs style
+ @import '../../assets/scss/variables';
+$color_1: #f9f5ef;
+$color_2: #fff;
+$color_3: #00455a;
+$color_4: #fff8f8;
+$font-family_1: Playfair Display;
+$font-family_2: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+$font-family_3: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+$background-color_1: #00455a;
+$background-color_2: #fff;
+$background-color_3: #f9f5ef;
+ 
+ .faq-block{
+    background: $bg-orange;
+    padding: 112px 64px;
+    width: 100%;
+	h1 {
+		
+width: 100%;
+height: 48px;
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+/* identical to box height, or 48px */
+
+
+/* red white */
+
+color: #FFF8F8;
+	}
+	p {
+		width:591px;
+height: 54px;
+
+font-family:Plus Jakarta Sans;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+/* or 27px */
+
+
+/* red white */
+
+color: #FFF8F8;
+/* or 21px */
+
+
+/* red white */
+
+color: #FFF8F8;
+		
+	}
+    .main-row {
+          display: flex;
+          .tabs {
+                .tab {
+                      width: 100%;
+                      color: $desc-gray;
+                      overflow: hidden;
+                      font-size: 32px;
+                      font-family: "PlayfairDisplay-Bold";
+                      [type=checkbox], [type=radio] {
+                            box-sizing: border-box;
+                            padding: 0;
+                        }
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            z-index: -1;
+                        }
+                        .tab-label {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 1em 0;
+                            background: transparent;
+                            cursor: pointer;
+                           align-items: center;
+                            &:after {
+                                  content: "";
+                                  background: url("../../assets/img/plus.png") no-repeat;
+                                  width: 56px;
+                                  height: 56px;
+                                  text-align: center;
+                                  transition: all 0.35s;
+                              }
+                        }
+                        input:checked + .tab-label::after{
+                            transform: rotate(-90deg);
+                            background: url("../../assets/img/cross.png") no-repeat;
+                      }
+                        .tab-content {
+                            max-height: 0;
+                            padding: 0 ;
+                            background: transparent;
+                            transition: all 0.35s;
+                            color: $desc-gray;
+                            font-size: 18px;
+                            font-family: 
+                            Plus Jakarta Sans;
+                        }
+                        input:checked ~ .tab-content{
+                            max-height: 100vh;
+                            padding: 0;
+                        }
+                  }
+            }
+      }
+}
+
+@media screen and (max-width: 600px) {
+
+  
+.faq-block{
+    padding: 50px 32px;
+    .main-row {
+          .tabs {
+                .tab {
+                     font-size: 24px;
+                     line-height: 120%;
+                        .tab-label {
+                           padding: 25px 0;
+                            &:after {
+                                  background: url("../../assets/img/m-Plus.png") no-repeat;
+                                  width: 46px;
+                                  height: 46px;
+                              }
+                        }
+                        input:checked + .tab-label::after{
+                            transform: rotate(-90deg);
+                            background: url("../../assets/img/m-cross.png") no-repeat;
+                      }
+                        .tab-content {
+                           font-size: 14px;
+                        }
+                  }
+                }
+            }
+            h1{
+                  
+                  width: 338px
+            }
+            p{
+                  font-size: 14px;
+                  height: 63px;
+                  width: 300px;
+                 
+            }
+      }
+}

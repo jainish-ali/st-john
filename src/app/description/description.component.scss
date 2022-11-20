@@ -1,0 +1,45 @@
+.about{
+    width: 100%;
+    height: 448px;
+    background-color: #fff;
+    text-align: center;
+}
+.about h1 {
+    font-family: Playfair Display;
+    padding-top: 112px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #00455a;
+}
+.about p{
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #00455a;
+    margin: 2rem 0;
+}
+.btn{
+    width: 133px;
+    height: 48px;
+    color: #fff;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    font-feature-settings: "ss06" on,"ss04" on,"liga" off;
+    background: #C1995B;
+    border-radius: 8px;
+    margin: 0 1rem;
+    position: relative;
+    box-shadow: 2px 3px 3px #27262627;
+}
+.btn:hover {
+    background-color: #00455a;
+    transition: .3s;
+}

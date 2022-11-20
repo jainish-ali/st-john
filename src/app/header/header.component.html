@@ -1,0 +1,123 @@
+
+<div class="main-header">
+  <div class="section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid py-3">
+        <div class="">
+          <img
+            class="st_jhon-img"
+            src="../../assets/St John Lettings.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex">
+          <img id="plus" class="search"  (click)="searchShow = !searchShow"  src="../../assets/search.png" alt="" />
+          <div class="sidebar-opener">
+            <img
+              class="open"
+              id="plus"
+              (click)="sidebarShow = !sidebarShow"
+              src="../../assets/open.png"
+              alt=""
+            />
+          </div>
+
+          <div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+            <div class="sidebar-close" (click)="sidebarShow = !sidebarShow">
+              X
+            </div>
+            <div class="sidebar-content">
+              <ul>
+                <li>To Let</li>
+                <li>About Us</li>
+                <li>News</li>
+                <li>Contact Us</li>
+                <li>Favourites</li>
+              </ul>
+            </div>
+          
+          
+          
+          </div>
+          <!-- serachbar show -->
+          <div class="sidebar-slider" [class.sidebar-slide-in]="searchShow">
+            <div class="sidebar-close" (click)="searchShow = !searchShow">
+              X
+            </div>
+            <div class="sidebar-content" >
+              
+               
+              <ul>
+                <li>Search Location</li>
+               
+              </ul>
+                </div>                
+         
+          
+          
+          </div>
+        </div>
+
+        <button
+          id="hide"
+          class="navbar-toggler ml-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="list">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">To Let</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Favourites</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">News</a>
+            </li>
+          </ul>
+          <div class="d-flex" id="hide">
+            <button class="btn Enquire-btn" id="hide" type="submit">
+              Enquire
+            </button>
+            <button class="btn" type="submit" id="hide">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="searcharea" id="hide" >
+    <select name="city" class="dropdown">
+      <option>Location</option>
+      <option>Delhi</option>
+      <option>Chennai</option>
+    </select>
+
+    <select id="sel1" name="Country" class="dropdown">
+      <option>Min Bedroom</option>
+      <option>1</option>
+      <option>2</option>
+    </select>
+    <select id="sel1" name="Country" class="dropdown">
+      <option>Max Bedroom</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <button class="btn" type="submit" id="hide">Search</button>
+  </div>
+</div>
+

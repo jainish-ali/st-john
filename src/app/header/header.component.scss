@@ -1,0 +1,179 @@
+.main-header{
+    overflow: hidden;
+    color: #f9f5ef;
+}
+.btn{
+    position: relative;
+    width: 133px;
+    height: 48px;
+    color: #fff;
+    font-family: SF-Medium;
+    // font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    font-feature-settings: "ss06" on,"ss04" on,"liga" off;
+    background: #C1995B;
+    border-radius: 8px;
+    margin: 0 1rem;
+    position: relative;
+    box-shadow: 2px 3px 3px #27262627;
+}
+.btn:hover {
+    background-color: #00455a;
+    transition: .3s;
+}
+
+.st_jhon-img{
+    width: 70px;
+    height: 48px;
+    margin: 0px 26px;
+}
+.dropdown{
+    height: 129px;
+}
+.nav-link{
+    margin-left: 30px;
+    color: #00455A !important;
+    font-size: 19px;
+}
+.navbar-nav{
+    margin-left: 40px !important;
+}
+.dropdown-header{
+    background: #00455A;
+}
+.drop-btn{
+    background-color: #fff;
+    color: #00455A;
+    width: 100%;
+}
+.searcharea{
+    background-color: #00455a;
+    width: 100%;
+    height: 129px;
+    padding: 35px 77px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn{
+        width: 158px;
+height: 60px;
+font-family: SF-Medium;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+
+
+text-align: center;
+font-feature-settings: 'ss06' on, 'ss04' on, 'liga' off;
+
+
+
+color: #FFFFFF;
+.btn:hover{
+    color: #fff;
+}
+    }
+}
+
+.dropdown{
+    margin: 0px 11px;
+    border: none;
+    width: 22rem;
+    height: 3.7rem;
+    border-radius: 8px;
+    padding: 12px 25px;
+    border-right: 10px solid #fff;
+    box-shadow: 2px 3px 3px #27262627;
+    font-size: 17px;
+}
+@media screen and (max-width: 450px) {
+	h1 {
+	   font-size: 1.5rem;
+    line-height: 35px;
+    position: absolute;
+	}
+	p{
+		font-size: .9rem;
+    position: absolute;
+    margin-top: 12rem;
+
+	}
+	.btn{
+		font-size: 1rem;
+    width: 287px;
+	}
+	#hide{
+		display: none;
+	}
+  }
+  @media only screen and (min-width: 767px) {
+    #plus { 
+      display: none; /* it will hide larger than 765px eg: laptop and desktop */
+    }
+  }
+
+  .open{
+
+height: 25px
+}
+.search{
+
+    height: 25px
+    }
+// * {
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     box-sizing: border-box;
+//     font-size: 16px;
+// }
+
+.sidebar-opener {
+    cursor: pointer;
+}
+
+.sidebar-slider {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f9f5ef;
+    transform: translateX(-100%);
+    transition: ease-in-out 300ms transform;
+    width: 300px;
+}
+
+.sidebar-slider.sidebar-slide-in {
+    transform: translateX(0%);
+    transition: ease-in-out 600ms transform;
+}
+
+.sidebar-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #00455a;
+    cursor: pointer;
+    padding: 16px;
+}
+.sidebar-content{
+    li{
+        color: #00455a;
+        list-style: none;
+        padding-top: 26px;
+        border-bottom: 1px solid #C1995B;
+        width: 204px;
+        height: auto;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+}
+#list{
+    list-style: none;
+}
+.flex {
+	display: inline-flex;
+}
+
